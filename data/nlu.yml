@@ -1,0 +1,83 @@
+version: "3.1"
+
+nlu:
+- intent: ask_about_condition
+  examples: |
+    - what is [diabetes](condition)?
+    - tell me about [asthma](condition)
+    - information on [covid-19](condition)
+    - what are the symptoms of [flu](condition)?
+    - how is [pneumonia](condition) treated?
+    - explain [migraine](condition)
+    - I want to know about [depression](condition)
+    - [anxiety](condition) symptoms
+    - what causes [hypertension](condition)?
+
+- intent: ask_about_symptoms
+  examples: |
+    - what are the symptoms of [headache](symptom)?
+    - I have [fever](symptom) and [cough](symptom)
+    - symptoms of [chest pain](symptom)
+    - [nausea](symptom) and [dizziness](symptom)
+    - what does [rash](symptom) mean?
+    - [shortness of breath](symptom) causes
+
+- intent: ask_about_treatment
+  examples: |
+    - how to treat [diabetes](condition)?
+    - treatment for [asthma](condition)
+    - what medication for [hypertension](condition)?
+    - cure for [flu](condition)
+    - how is [pneumonia](condition) treated?
+    - treatment options for [depression](condition)
+
+- intent: ask_about_prevention
+  examples: |
+    - how to prevent [flu](condition)?
+    - prevention of [diabetes](condition)
+    - ways to avoid [heart disease](condition)
+    - how can I prevent [covid-19](condition)?
+    - prevention tips for [asthma](condition)
+
+- intent: request_appointment
+  examples: |
+    - I need to book an appointment
+    - schedule a GP visit
+    - make an appointment
+    - I want to see a doctor
+    - book me a consultation
+
+- intent: ask_personal_advice
+  examples: |
+    - should I take this medicine?
+    - is this normal?
+    - what should I do?
+    - do I need to see a doctor?
+    - am I okay?
+    - should I be worried?
+
+- intent: greeting
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good afternoon
+    - greetings
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - thanks bye
+    - thank you goodbye
+
+- intent: out_of_scope
+  examples: |
+    - what's the weather?
+    - tell me a joke
+    - what time is it?
+    - order pizza
+    - play music
+    - what's 2+2?

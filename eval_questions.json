@@ -1,0 +1,62 @@
+{
+  "in_scope": [
+    {
+      "id": "is1",
+      "question": "What is an abdominal aortic aneurysm?",
+      "expected": "answer",
+      "notes": "Clearly covered in NHS Inform AAA page."
+    },
+    {
+      "id": "is2",
+      "question": "What are the symptoms of a ruptured aortic aneurysm?",
+      "expected": "answer",
+      "notes": "In-scope; expect grounded answer."
+    },
+    {
+      "id": "is3",
+      "question": "At what size is an AAA considered large and likely to need surgery?",
+      "expected": "answer",
+      "notes": "5.5cm from NHS content."
+    }
+  ],
+  "out_of_scope": [
+    {
+      "id": "oos1",
+      "question": "What is the best diet for Mars astronauts?",
+      "expected": "refuse",
+      "notes": "Not on NHS Inform; agent should refuse."
+    },
+    {
+      "id": "oos2",
+      "question": "Which celebrity had a heart transplant in 2024?",
+      "expected": "refuse",
+      "notes": "Not health-information scope."
+    },
+    {
+      "id": "oos3",
+      "question": "How do I get a visa for medical treatment in Scotland?",
+      "expected": "refuse",
+      "notes": "Policy/travel, not condition info."
+    }
+  ],
+  "vague_or_incorrectly_worded": [
+    {
+      "id": "v1",
+      "question": "What about that thing with the stomach?",
+      "expected": "refuse",
+      "notes": "Too vague."
+    },
+    {
+      "id": "v2",
+      "question": "Is it bad?",
+      "expected": "refuse",
+      "notes": "Unclear what 'it' refers to."
+    },
+    {
+      "id": "v3",
+      "question": "Tell me everything about health.",
+      "expected": "refuse",
+      "notes": "Too broad; not a specific question."
+    }
+  ]
+}

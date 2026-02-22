@@ -1,0 +1,47 @@
+version: "3.1"
+
+stories:
+- story: ask about condition
+  steps:
+  - intent: ask_about_condition
+  - action: action_answer_health_question
+
+- story: ask about symptoms
+  steps:
+  - intent: ask_about_symptoms
+  - action: action_answer_health_question
+
+- story: ask about treatment
+  steps:
+  - intent: ask_about_treatment
+  - action: action_answer_health_question
+
+- story: ask about prevention
+  steps:
+  - intent: ask_about_prevention
+  - action: action_answer_health_question
+
+- story: request appointment
+  steps:
+  - intent: request_appointment
+  - action: action_refuse_appointment
+
+- story: ask personal advice
+  steps:
+  - intent: ask_personal_advice
+  - action: action_refuse_personal_advice
+
+- story: greeting
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: action_refuse_out_of_scope

@@ -1,0 +1,33 @@
+version: "3.1"
+
+intents:
+  - ask_about_condition
+  - ask_about_symptoms
+  - ask_about_treatment
+  - ask_about_prevention
+  - request_appointment
+  - ask_personal_advice
+  - greeting
+  - goodbye
+  - out_of_scope
+
+entities:
+  - condition
+  - symptom
+
+responses:
+  utter_greeting:
+  - text: "Hello! I'm a health information assistant. I can help answer questions about health conditions, symptoms, treatments, and prevention using information from NHS Inform. How can I help you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Remember, for personal medical advice, always consult your GP or GP practice. Take care!"
+
+actions:
+  - action_answer_health_question
+  - action_refuse_appointment
+  - action_refuse_personal_advice
+  - action_refuse_out_of_scope
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

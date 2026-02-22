@@ -1,0 +1,22 @@
+version: "3.1"
+
+rules:
+- rule: Greet user
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Refuse appointments
+  steps:
+  - intent: request_appointment
+  - action: action_refuse_appointment
+
+- rule: Refuse personal advice
+  steps:
+  - intent: ask_personal_advice
+  - action: action_refuse_personal_advice
